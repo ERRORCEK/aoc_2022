@@ -16,8 +16,8 @@ def get_priority(char_):
 def part_1(lines: list) -> int:
     result = 0
     for line in lines:
-        line_length = len(line)
-        c_1, c_2 = line[:line_length // 2], line[line_length // 2:]
+        __n = len(line)
+        c_1, c_2 = line[:__n // 2], line[__n // 2:]
         c_1 = set(c_1)
         c_2 = set(c_2)
         char_ = list(c_1 & c_2)[0]
