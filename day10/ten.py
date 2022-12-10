@@ -54,7 +54,7 @@ def execute_cmds_with_crt() -> list[list[int]]:
 
 def draw_image(crt):
     for row in crt:
-        print("".join("#" if val else "." for val in row))
+        print("".join("█" if val else " " for val in row))
 
 if __name__ == "__main__":
     lines = parse_input()
