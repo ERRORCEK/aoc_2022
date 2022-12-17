@@ -1,7 +1,7 @@
 import collections
 import heapq
 from typing import Any
-
+import time
 
 def parse_input(filename) -> list[dict]:
     valves, tunnels = {}, {}
@@ -109,7 +109,14 @@ def part2(valves, dist) -> int:
 
 
 if __name__ == '__main__':
+    start_time = time.time()
     i_valves, i_tunnels = parse_input('input.txt')
     i_dist = calc_distances(i_valves, i_tunnels)
+    parse_time = time.time()
+    print(f'Parse time: {parse_time - start_time}')
     print(part1(i_valves, i_dist))
+    part1_time = time.time()
+    print(f'Part 1 time: {part1_time - parse_time}')
     print(part2(i_valves, i_dist))
+    part2_time = time.time()
+    print(f'Part 2 time: {part2_time - part1_time}')
