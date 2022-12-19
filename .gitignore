@@ -127,3 +127,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+day17/foreign.py
+day16/test.py
