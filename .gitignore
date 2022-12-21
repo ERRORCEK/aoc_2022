@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 day17/foreign.py
 day16/test.py
+day20/test.py
